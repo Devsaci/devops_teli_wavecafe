@@ -73,3 +73,102 @@ drwx------. 2 vagrant vagrant  29 Feb 10 16:02 .ssh
 [root@localhost ~]# ls
 anaconda-ks.cfg  original-ks.cfg
 [root@localhost ~]#
+
+# [root@localhost ~]# yum install httpd wget unzip -y
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+epel/x86_64/metalink                                                                    |  21 kB  00:00:00
+ * base: mirror.in2p3.fr
+ * epel: mirror.in2p3.fr
+ * extras: mirror.in2p3.fr
+ * updates: mirror.in2p3.fr
+base                                                                                    | 3.6 kB  00:00:00
+epel                                                                                    | 4.7 kB  00:00:00
+extras                                                                                  | 2.9 kB  00:00:00
+updates                                                                                 | 2.9 kB  00:00:00
+(1/7): base/7/x86_64/group_gz                                                           | 153 kB  00:00:00
+(2/7): extras/7/x86_64/primary_db                                                       | 249 kB  00:00:00
+(3/7): epel/x86_64/group_gz                                                             |  99 kB  00:00:00
+epel/x86_64/updateinfo         FAILED
+https://ftp.plusline.net/epel/7/x86_64/repodata/dfd0328b896af73be35509c6fd832490a2c8e2aab19837670ee8ba66498d7fd4-updateinfo.xml.bz2: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
+To address this issue please refer to the below wiki article
+
+https://wiki.centos.org/yum-errors
+
+If above article doesn't help to resolve this issue please use https://bugs.centos.org/.
+
+(4/7): epel/x86_64/updateinfo                                                           | 1.0 MB  00:00:00
+epel/x86_64/primary_db         FAILED                                          3.0 MB/s |  11 MB  00:00:07 ETA
+https://mirror.karneval.cz/pub/linux/fedora/epel/7/x86_64/repodata/45408ec1d6e2881c46c9ae615352e36ef1222d467a21ed6228afcb970865e45e-primary.sqlite.bz2: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
+(5/7): base/7/x86_64/primary_db                                                         | 6.1 MB  00:00:02
+(6/7): epel/x86_64/primary_db                                                           | 7.0 MB  00:00:02
+(7/7): updates/7/x86_64/primary_db                                                      |  19 MB  00:00:07
+Package wget-1.14-18.el7_6.1.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.6-98.el7.centos.6 will be installed
+--> Processing Dependency: httpd-tools = 2.4.6-98.el7.centos.6 for package: httpd-2.4.6-98.el7.centos.6.x86_64
+--> Processing Dependency: /etc/mime.types for package: httpd-2.4.6-98.el7.centos.6.x86_64
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.4.6-98.el7.centos.6.x86_64
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.4.6-98.el7.centos.6.x86_64
+---> Package unzip.x86_64 0:6.0-24.el7_9 will be installed
+--> Running transaction check
+---> Package apr.x86_64 0:1.4.8-7.el7 will be installed
+---> Package apr-util.x86_64 0:1.5.2-6.el7 will be installed
+---> Package httpd-tools.x86_64 0:2.4.6-98.el7.centos.6 will be installed
+---> Package mailcap.noarch 0:2.1.41-2.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=============================================================================================================== Package                  Arch                Version                               Repository            Size
+===============================================================================================================Installing:
+ httpd                    x86_64              2.4.6-98.el7.centos.6                 updates              2.7 M
+ unzip                    x86_64              6.0-24.el7_9                          updates              172 k
+Installing for dependencies:
+ apr                      x86_64              1.4.8-7.el7                           base                 104 k
+ apr-util                 x86_64              1.5.2-6.el7                           base                  92 k
+ httpd-tools              x86_64              2.4.6-98.el7.centos.6                 updates               94 k
+ mailcap                  noarch              2.1.41-2.el7                          base                  31 k
+
+Transaction Summary
+===============================================================================================================Install  2 Packages (+4 Dependent packages)
+
+Total download size: 3.2 M
+Installed size: 10 M
+Downloading packages:
+(1/6): apr-util-1.5.2-6.el7.x86_64.rpm                                                  |  92 kB  00:00:00
+(2/6): httpd-tools-2.4.6-98.el7.centos.6.x86_64.rpm                                     |  94 kB  00:00:00
+(3/6): apr-1.4.8-7.el7.x86_64.rpm                                                       | 104 kB  00:00:02
+(4/6): mailcap-2.1.41-2.el7.noarch.rpm                                                  |  31 kB  00:00:02
+(5/6): unzip-6.0-24.el7_9.x86_64.rpm                                                    | 172 kB  00:00:02
+(6/6): httpd-2.4.6-98.el7.centos.6.x86_64.rpm                                           | 2.7 MB  00:00:03
+---------------------------------------------------------------------------------------------------------------Total                                                                          925 kB/s | 3.2 MB  00:00:03
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : apr-1.4.8-7.el7.x86_64                                                                      1/6
+  Installing : apr-util-1.5.2-6.el7.x86_64                                                                 2/6
+  Installing : httpd-tools-2.4.6-98.el7.centos.6.x86_64                                                    3/6
+  Installing : mailcap-2.1.41-2.el7.noarch                                                                 4/6
+  Installing : httpd-2.4.6-98.el7.centos.6.x86_64                                                          5/6
+  Installing : unzip-6.0-24.el7_9.x86_64                                                                   6/6
+  Verifying  : httpd-2.4.6-98.el7.centos.6.x86_64                                                          1/6
+  Verifying  : mailcap-2.1.41-2.el7.noarch                                                                 2/6
+  Verifying  : apr-1.4.8-7.el7.x86_64                                                                      3/6
+  Verifying  : apr-util-1.5.2-6.el7.x86_64                                                                 4/6
+  Verifying  : httpd-tools-2.4.6-98.el7.centos.6.x86_64                                                    5/6
+  Verifying  : unzip-6.0-24.el7_9.x86_64                                                                   6/6
+
+Installed:
+  httpd.x86_64 0:2.4.6-98.el7.centos.6                       unzip.x86_64 0:6.0-24.el7_9
+
+Dependency Installed:
+  apr.x86_64 0:1.4.8-7.el7        apr-util.x86_64 0:1.5.2-6.el7   httpd-tools.x86_64 0:2.4.6-98.el7.centos.6
+  mailcap.noarch 0:2.1.41-2.el7
+
+Complete!
+[root@localhost ~]#
