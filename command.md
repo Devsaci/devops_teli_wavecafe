@@ -172,3 +172,6 @@ Dependency Installed:
 
 Complete!
 [root@localhost ~]#
+
+# [root@localhost ~]# systemctl start httpd
+[root@localhost ~]#
