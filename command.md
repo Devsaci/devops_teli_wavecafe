@@ -68,3 +68,8 @@ drwx------. 3 vagrant vagrant  37 Jan  5 03:53 .ansible
 drwx------. 2 vagrant vagrant  29 Feb 10 16:02 .ssh
 -rw-r--r--. 1 vagrant vagrant   6 Jan  5 03:39 .vbox_version
 [vagrant@localhost ~]$
+
+# [vagrant@localhost ~]$ sudo -i
+[root@localhost ~]# ls
+anaconda-ks.cfg  original-ks.cfg
+[root@localhost ~]#
