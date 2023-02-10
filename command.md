@@ -175,3 +175,7 @@ Complete!
 
 # [root@localhost ~]# systemctl start httpd
 [root@localhost ~]#
+
+# [root@localhost ~]# systemctl enable httpd
+Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
+[root@localhost ~]#
