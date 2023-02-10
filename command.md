@@ -52,3 +52,19 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: Mounting shared folders...
     default: /vagrant => C:/Users/Zakaria/DEVOPS_Imran Teli/wavecafe
 PS C:\Users\Zakaria\DEVOPS_Imran Teli\wavecafe>
+
+# PS C:\Users\Zakaria\DEVOPS_Imran Teli\wavecafe> vagrant ssh
+[vagrant@localhost ~]$ ls
+[vagrant@localhost ~]$ ls al
+ls: cannot access al: No such file or directory
+[vagrant@localhost ~]$ ls -al
+total 16
+drwx------. 4 vagrant vagrant 111 Jan  5 04:02 .
+drwxr-xr-x. 3 root    root     21 Jan  5 03:29 ..
+drwx------. 3 vagrant vagrant  37 Jan  5 03:53 .ansible
+-rw-r--r--. 1 vagrant vagrant  18 Apr  1  2020 .bash_logout
+-rw-r--r--. 1 vagrant vagrant 193 Apr  1  2020 .bash_profile
+-rw-r--r--. 1 vagrant vagrant 231 Apr  1  2020 .bashrc
+drwx------. 2 vagrant vagrant  29 Feb 10 16:02 .ssh
+-rw-r--r--. 1 vagrant vagrant   6 Jan  5 03:39 .vbox_version
+[vagrant@localhost ~]$
