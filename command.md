@@ -179,3 +179,30 @@ Complete!
 # [root@localhost ~]# systemctl enable httpd
 Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
 [root@localhost ~]#
+
+# [root@localhost ~]# ip addr show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:03:5e:61 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global noprefixroute dynamic enp0s3
+       valid_lft 85240sec preferred_lft 85240sec
+    inet6 fe80::a00:27ff:fe03:5e61/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:db:97:53 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.33.10/24 brd 192.168.33.255 scope global noprefixroute enp0s8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fedb:9753/64 scope link
+       valid_lft forever preferred_lft forever
+4: enp0s9: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fb:69:2c brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.99/24 brd 192.168.1.255 scope global noprefixroute dynamic enp0s9
+       valid_lft 85240sec preferred_lft 85240sec
+    inet6 fe80::a00:27ff:fefb:692c/64 scope link
+       valid_lft forever preferred_lft forever
+[root@localhost ~]#
