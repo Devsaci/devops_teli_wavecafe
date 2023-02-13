@@ -206,3 +206,42 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service t
     inet6 fe80::a00:27ff:fefb:692c/64 scope link
        valid_lft forever preferred_lft forever
 [root@localhost ~]#
+
+# [root@localhost ~]# ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::a00:27ff:fe03:5e61  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:03:5e:61  txqueuelen 1000  (Ethernet)
+        RX packets 30169  bytes 40817286 (38.9 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5324  bytes 464414 (453.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s8: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.33.10  netmask 255.255.255.0  broadcast 192.168.33.255
+        inet6 fe80::a00:27ff:fedb:9753  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:db:97:53  txqueuelen 1000  (Ethernet)
+        RX packets 261  bytes 37808 (36.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 229  bytes 100401 (98.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s9: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.99  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::a00:27ff:fefb:692c  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:fb:69:2c  txqueuelen 1000  (Ethernet)
+        RX packets 12239  bytes 765008 (747.0 KiB)
+        RX errors 0  dropped 17  overruns 0  frame 0
+        TX packets 741  bytes 56720 (55.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 72  bytes 6224 (6.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 72  bytes 6224 (6.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@localhost ~]#
