@@ -245,3 +245,11 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 [root@localhost ~]#
+
+# [vagrant@localhost ~]$ cd /var/www/html/
+[vagrant@localhost html]$ ls
+[vagrant@localhost html]$ ls -al
+total 0
+drwxr-xr-x. 2 root root  6 Jan 27 17:37 .
+drwxr-xr-x. 4 root root 33 Feb 10 16:16 ..
+[vagrant@localhost html]$
