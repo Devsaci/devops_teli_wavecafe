@@ -253,3 +253,12 @@ total 0
 drwxr-xr-x. 2 root root  6 Jan 27 17:37 .
 drwxr-xr-x. 4 root root 33 Feb 10 16:16 ..
 [vagrant@localhost html]$
+
+# [vagrant@localhost ~]$ sudo -i
+# [root@localhost ~]# cd /var/www/html
+[root@localhost html]# ls
+[root@localhost html]# ls -al
+total 0
+drwxr-xr-x. 2 root root  6 Jan 27 17:37 .
+drwxr-xr-x. 4 root root 33 Feb 10 16:16 ..
+[root@localhost html]#
