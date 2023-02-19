@@ -659,3 +659,18 @@ fstab                    mime.types                resolv.conf        yum
 gcrypt                   mke2fs.conf               rpc                yum.conf
 gnupg                    modprobe.d                rpm                yum.repos.d
 [root@localhost etc]#
+
+# [root@localhost etc]# cd /tmp/
+# [root@localhost tmp]# ls
+systemd-private-3894502e1fc347c4b265859f975b96d5-chronyd.service-bRLL2D
+systemd-private-3894502e1fc347c4b265859f975b96d5-httpd.service-8aEsLr
+systemd-private-c10cf8d844f4449a9e181b60365edf26-chronyd.service-lta0BL
+systemd-private-c10cf8d844f4449a9e181b60365edf26-httpd.service-awDtV7
+# [root@localhost tmp]# touch devopsfile{1..5}.txt
+# [root@localhost tmp]# ls
+devopsfile1.txt  systemd-private-3894502e1fc347c4b265859f975b96d5-chronyd.service-bRLL2D
+devopsfile2.txt  systemd-private-3894502e1fc347c4b265859f975b96d5-httpd.service-8aEsLr
+devopsfile3.txt  systemd-private-c10cf8d844f4449a9e181b60365edf26-chronyd.service-lta0BL
+devopsfile4.txt  systemd-private-c10cf8d844f4449a9e181b60365edf26-httpd.service-awDtV7
+devopsfile5.txt
+[root@localhost tmp]#
