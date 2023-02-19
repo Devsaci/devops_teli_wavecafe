@@ -289,3 +289,49 @@ REDHAT_SUPPORT_PRODUCT="centos"
 REDHAT_SUPPORT_PRODUCT_VERSION="7"
 
 [vagrant@localhost ~]$#
+
+# [vagrant@localhost home]$ ls
+vagrant
+# [vagrant@localhost home]$ cd ..
+[vagrant@localhost /]$ pwd
+/
+# [vagrant@localhost /]$ ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  vagrant  var
+# [vagrant@localhost /]$ ls -al
+total 24
+dr-xr-xr-x.  18 root    root     239 Feb 10 16:02 .
+dr-xr-xr-x.  18 root    root     239 Feb 10 16:02 ..
+lrwxrwxrwx.   1 root    root       7 Jan  4 22:26 bin -> usr/bin
+dr-xr-xr-x.   5 root    root    4096 Jan  5 04:02 boot
+drwxr-xr-x.  19 root    root    3040 Feb 19 07:57 dev
+drwxr-xr-x.  80 root    root    8192 Feb 19 07:58 etc
+drwxr-xr-x.   3 root    root      21 Jan  5 03:29 home
+lrwxrwxrwx.   1 root    root       7 Jan  4 22:26 lib -> usr/lib
+lrwxrwxrwx.   1 root    root       9 Jan  4 22:26 lib64 -> usr/lib64
+drwxr-xr-x.   2 root    root       6 Apr 11  2018 media
+drwxr-xr-x.   2 root    root       6 Apr 11  2018 mnt
+drwxr-xr-x.   3 root    root      39 Jan  5 04:01 opt
+dr-xr-xr-x. 130 root    root       0 Feb 19 07:57 proc
+dr-xr-x---.   3 root    root     170 Feb 10 21:21 root
+drwxr-xr-x.  28 root    root     880 Feb 19 10:57 run
+lrwxrwxrwx.   1 root    root       8 Jan  4 22:26 sbin -> usr/sbin
+drwxr-xr-x.   2 root    root       6 Apr 11  2018 srv
+dr-xr-xr-x.  13 root    root       0 Feb 19 07:57 sys
+drwxrwxrwt.  11 root    root    4096 Feb 19 08:53 tmp
+drwxr-xr-x.  13 root    root     155 Jan  4 22:26 usr
+drwxrwxrwx.   1 vagrant vagrant 4096 Feb 13 17:45 vagrant
+drwxr-xr-x.  20 root    root     278 Feb 10 16:16 var
+# [vagrant@localhost /]$ cd /var/
+# [vagrant@localhost var]$ ls
+adm    crash  empty  gopher    lib    lock  mail  opt       run    tmp  yp
+cache  db     games  kerberos  local  log   nis   preserve  spool  www
+# [vagrant@localhost var]$ cd ..
+# [vagrant@localhost /]$ cd /home/vagrant
+# [vagrant@localhost ~]$ pwd
+/home/vagrant
+# [vagrant@localhost ~]$ sudo -i
+# [root@localhost ~]# whoami
+root
+# [root@localhost ~]# pwd
+/root
+[root@localhost ~]#
