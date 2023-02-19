@@ -608,3 +608,54 @@ ipcrm                               ranlib                    zmore
 ipcs                                raw                       znew
 iptables-xml                        read                      zsoelim
 [root@localhost bin]#
+
+# [root@localhost bin]# cd /etc/
+# [root@localhost etc]# ls
+adjtime                  GREP_COLORS               modules-load.d     rsyncd.conf
+aliases                  groff                     motd               rsyslog.conf
+aliases.db               group                     mtab               rsyslog.d
+alternatives             group-                    my.cnf             rwtab
+anacrontab               grub2.cfg                 my.cnf.d           rwtab.d
+asound.conf              grub.d                    netconfig          samba
+audisp                   gshadow                   NetworkManager     sasl2
+audit                    gshadow-                  networks           securetty
+bash_completion.d        gss                       nfs.conf           security
+bashrc                   gssproxy                  nfsmount.conf      selinux
+binfmt.d                 host.conf                 nsswitch.conf      services
+centos-release           hostname                  nsswitch.conf.bak  sestatus.conf
+centos-release-upstream  hosts                     openldap           shadow
+chkconfig.d              hosts.allow               opt                shadow-
+chrony.conf              hosts.deny                os-release         shells
+chrony.keys              httpd                     pam.d              skel
+cifs-utils               idmapd.conf               passwd             ssh
+cron.d                   init.d                    passwd-            ssl
+cron.daily               inittab                   pkcs11             statetab
+cron.deny                inputrc                   pki                statetab.d
+cron.hourly              iproute2                  plymouth           subgid
+cron.monthly             issue                     pm                 subuid
+crontab                  issue.net                 polkit-1           sudo.conf
+cron.weekly              kdump.conf                popt.d             sudoers
+crypttab                 kernel                    postfix            sudoers.d
+csh.cshrc                krb5.conf                 ppp                sudo-ldap.conf
+csh.login                krb5.conf.d               prelink.conf.d     sysconfig
+dbus-1                   ld.so.cache               printcap           sysctl.conf
+default                  ld.so.conf                profile            sysctl.d
+depmod.d                 ld.so.conf.d              profile.d          systemd
+dhcp                     libaudit.conf             protocols          system-release
+DIR_COLORS               libnl                     python             system-release-cpe
+DIR_COLORS.256color      libuser.conf              rc0.d              tcsd.conf
+DIR_COLORS.lightbgcolor  locale.conf               rc1.d              terminfo
+dracut.conf              localtime                 rc2.d              tmpfiles.d
+dracut.conf.d            login.defs                rc3.d              tuned
+e2fsck.conf              logrotate.conf            rc4.d              udev
+environment              logrotate.d               rc5.d              vconsole.conf
+ethertypes               lvm                       rc6.d              virc
+exports                  machine-id                rc.d               wgetrc
+exports.d                magic                     rc.local           wpa_supplicant
+favicon.png              mailcap                   redhat-release     X11
+filesystems              makedumpfile.conf.sample  request-key.conf   xdg
+firewalld                man_db.conf               request-key.d      xinetd.d
+fstab                    mime.types                resolv.conf        yum
+gcrypt                   mke2fs.conf               rpc                yum.conf
+gnupg                    modprobe.d                rpm                yum.repos.d
+[root@localhost etc]#
