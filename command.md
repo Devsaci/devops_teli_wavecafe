@@ -262,3 +262,30 @@ total 0
 drwxr-xr-x. 2 root root  6 Jan 27 17:37 .
 drwxr-xr-x. 4 root root 33 Feb 10 16:16 ..
 [root@localhost html]#
+
+# PS C:\Users\Zakaria\devops_teli\wavecafe> vagrant ssh
+Last login: Sun Feb 19 07:59:32 2023 from 10.0.2.2
+
+[vagrant@localhost ~]$
+# [vagrant@localhost ~]$ whoami
+vagrant
+# [vagrant@localhost ~]$ pwd
+/home/vagrant
+# [vagrant@localhost ~]$ cat /etc/os-release
+NAME="CentOS Linux"
+VERSION="7 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="7"
+PRETTY_NAME="CentOS Linux 7 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:7"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-7"
+CENTOS_MANTISBT_PROJECT_VERSION="7"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="7"
+
+[vagrant@localhost ~]$#
