@@ -347,3 +347,8 @@ anaconda-ks.cfg  original-ks.cfg
 
 # [root@localhost ~]# cd /
 [root@localhost /]#
+
+# [root@localhost /]# ls
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  vagrant
+boot  etc  lib   media  opt  root  sbin  sys  usr  var
+[root@localhost /]#
