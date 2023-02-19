@@ -750,3 +750,20 @@ Dependency Installed:
 
 Complete!
 [vagrant@localhost ~]$
+
+# [vagrant@localhost ~]$ ls
+# [vagrant@localhost ~]$ pwd
+/home/vagrant
+# [vagrant@localhost ~]$ vim firstfile.txt
+# [vagrant@localhost ~]$ ls
+firstfile.txt
+# [vagrant@localhost ~]$ cat firstfile.txt
+Welcome to Linux
+Installed:  vim-enhanced.x86_64 2:7.4.629-8.el7_9
+
+# [vagrant@localhost ~]$ vim firstfile.txt
+# [vagrant@localhost ~]$ cat firstfile.txt
+Welcome to Linux
+Installed:  vim-enhanced.x86_64 2:7.4.629-8.el7_9
+It super important for you to practice linux before getting into DevOps.
+[vagrant@localhost ~]$
