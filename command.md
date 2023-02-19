@@ -674,3 +674,79 @@ devopsfile3.txt  systemd-private-c10cf8d844f4449a9e181b60365edf26-chronyd.servic
 devopsfile4.txt  systemd-private-c10cf8d844f4449a9e181b60365edf26-httpd.service-awDtV7
 devopsfile5.txt
 [root@localhost tmp]#
+
+# PS C:\Users\Zakaria\devops_teli\wavecafe> vagrant ssh
+Last login: Sun Feb 19 15:43:48 2023 from 10.0.2.2
+# [vagrant@localhost ~]$ whoami
+vagrant
+# [vagrant@localhost ~]$ sudo yum install vim
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+epel/x86_64/metalink                                                         |  24 kB  00:00:00
+ * base: mirrors.ircam.fr
+ * epel: mirror.in2p3.fr
+ * extras: mirror.in2p3.fr
+ * updates: mirror.in2p3.fr
+base                                                                         | 3.6 kB  00:00:00
+epel                                                                         | 4.7 kB  00:00:00
+extras                                                                       | 2.9 kB  00:00:00
+updates                                                                      | 2.9 kB  00:00:00
+(1/2): epel/x86_64/updateinfo                                                | 1.0 MB  00:00:00
+(2/2): epel/x86_64/primary_db                                                | 7.0 MB  00:00:02
+Resolving Dependencies
+--> Running transaction check
+---> Package vim-enhanced.x86_64 2:7.4.629-8.el7_9 will be installed
+--> Processing Dependency: vim-common = 2:7.4.629-8.el7_9 for package: 2:vim-enhanced-7.4.629-8.el7_9.x86_64
+--> Processing Dependency: libgpm.so.2()(64bit) for package: 2:vim-enhanced-7.4.629-8.el7_9.x86_64
+--> Running transaction check
+---> Package gpm-libs.x86_64 0:1.20.7-6.el7 will be installed
+---> Package vim-common.x86_64 2:7.4.629-8.el7_9 will be installed
+--> Processing Dependency: vim-filesystem for package: 2:vim-common-7.4.629-8.el7_9.x86_64
+--> Running transaction check
+---> Package vim-filesystem.x86_64 2:7.4.629-8.el7_9 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==================================================================================================== Package                   Arch              Version                       Repository          Size
+====================================================================================================Installing:
+ vim-enhanced              x86_64            2:7.4.629-8.el7_9             updates            1.1 M
+Installing for dependencies:
+ gpm-libs                  x86_64            1.20.7-6.el7                  base                32 k
+ vim-common                x86_64            2:7.4.629-8.el7_9             updates            5.9 M
+ vim-filesystem            x86_64            2:7.4.629-8.el7_9             updates             11 k
+
+Transaction Summary
+====================================================================================================Install  1 Package (+3 Dependent packages)
+
+Total download size: 7.0 M
+Installed size: 23 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/4): gpm-libs-1.20.7-6.el7.x86_64.rpm                                      |  32 kB  00:00:00
+(2/4): vim-filesystem-7.4.629-8.el7_9.x86_64.rpm                             |  11 kB  00:00:00
+(3/4): vim-enhanced-7.4.629-8.el7_9.x86_64.rpm                               | 1.1 MB  00:00:00
+(4/4): vim-common-7.4.629-8.el7_9.x86_64.rpm                                 | 5.9 MB  00:00:01
+----------------------------------------------------------------------------------------------------Total                                                               4.2 MB/s | 7.0 MB  00:00:01
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 2:vim-filesystem-7.4.629-8.el7_9.x86_64                                          1/4
+  Installing : 2:vim-common-7.4.629-8.el7_9.x86_64                                              2/4
+  Installing : gpm-libs-1.20.7-6.el7.x86_64                                                     3/4
+  Installing : 2:vim-enhanced-7.4.629-8.el7_9.x86_64                                            4/4
+  Verifying  : gpm-libs-1.20.7-6.el7.x86_64                                                     1/4
+  Verifying  : 2:vim-enhanced-7.4.629-8.el7_9.x86_64                                            2/4
+  Verifying  : 2:vim-common-7.4.629-8.el7_9.x86_64                                              3/4
+  Verifying  : 2:vim-filesystem-7.4.629-8.el7_9.x86_64                                          4/4
+
+Installed:
+  vim-enhanced.x86_64 2:7.4.629-8.el7_9
+
+Dependency Installed:
+  gpm-libs.x86_64 0:1.20.7-6.el7                     vim-common.x86_64 2:7.4.629-8.el7_9
+  vim-filesystem.x86_64 2:7.4.629-8.el7_9
+
+Complete!
+[vagrant@localhost ~]$
