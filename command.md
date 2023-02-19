@@ -335,3 +335,12 @@ root
 # [root@localhost ~]# pwd
 /root
 [root@localhost ~]#
+
+# [vagrant@localhost ~]$ sudo -i
+# [root@localhost ~]# whoami
+root
+# [root@localhost ~]# pwd
+/root
+# [root@localhost ~]# ls
+anaconda-ks.cfg  original-ks.cfg
+[root@localhost ~]#
