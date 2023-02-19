@@ -344,3 +344,6 @@ root
 # [root@localhost ~]# ls
 anaconda-ks.cfg  original-ks.cfg
 [root@localhost ~]#
+
+# [root@localhost ~]# cd /
+[root@localhost /]#
