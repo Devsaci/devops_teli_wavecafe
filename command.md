@@ -964,5 +964,10 @@ Archive:  2121_wave_cafe.zip
   inflating: 2121_wave_cafe/video/wave-cafe-video-bg.mp4
 [root@localhost tmp]#
 
+# [root@localhost tmp]# cd 2121_wave_cafe
+# [root@localhost 2121_wave_cafe]# ls
+css  fontawesome  img  index.html  js  video
+[root@localhost 2121_wave_cafe]#
+
 
 
