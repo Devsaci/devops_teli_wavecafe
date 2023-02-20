@@ -974,6 +974,7 @@ css  fontawesome  img  index.html  js  video
 cp: overwrite ‘/var/www/html/index.html’? y
 
 # [root@localhost 2121_wave_cafe]# systemctl restart httpd
+
 # [root@localhost 2121_wave_cafe]# ls /var/www/html/
 css  fontawesome  img  index.html  index_v1.html  js  video
 
