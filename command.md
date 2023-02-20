@@ -767,3 +767,95 @@ Welcome to Linux
 Installed:  vim-enhanced.x86_64 2:7.4.629-8.el7_9
 It super important for you to practice linux before getting into DevOps.
 [vagrant@localhost ~]$
+
+# PS C:\Users\Zakaria\devops_teli\wavecafe> vagrant status
+Current machine states:
+
+default                   poweroff (virtualbox)
+
+The VM is powered off. To restart the VM, simply run `vagrant up`
+# PS C:\Users\Zakaria\devops_teli\wavecafe> vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'geerlingguy/centos7' version '1.2.27' is up to date...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Available bridged network interfaces:
+1) Intel(R) 82579V Gigabit Network Connection
+2) Hyper-V Virtual Ethernet Adapter
+==> default: When choosing an interface, it is usually the one that is
+==> default: being used to connect to the internet.
+==> default:
+    default: Which interface should the network bridge to? 1
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+    default: Adapter 2: hostonly
+    default: Adapter 3: bridged
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default:
+    default: Guest Additions Version: 6.1.32
+    default: VirtualBox Version: 7.0
+==> default: Configuring and enabling network interfaces...
+==> default: Mounting shared folders...
+    default: /vagrant => C:/Users/Zakaria/devops_teli/wavecafe
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+# PS C:\Users\Zakaria\devops_teli\wavecafe> vagrant ssh
+Last login: Sun Feb 19 16:23:26 2023 from 10.0.2.2
+# [vagrant@localhost ~]$ ls
+firstfile.txt
+# [vagrant@localhost ~]$ ls -al
+total 28
+drwx------. 4 vagrant vagrant 169 Feb 19 16:57 .
+drwxr-xr-x. 3 root    root     21 Jan  5 03:29 ..
+drwx------. 3 vagrant vagrant  37 Jan  5 03:53 .ansible
+-rw-------. 1 vagrant vagrant 683 Feb 19 17:17 .bash_history
+-rw-r--r--. 1 vagrant vagrant  18 Apr  1  2020 .bash_logout
+-rw-r--r--. 1 vagrant vagrant 193 Apr  1  2020 .bash_profile
+-rw-r--r--. 1 vagrant vagrant 231 Apr  1  2020 .bashrc
+-rw-rw-r--. 1 vagrant vagrant 140 Feb 19 16:57 firstfile.txt
+drwx------. 2 vagrant vagrant  29 Feb 10 16:02 .ssh
+-rw-r--r--. 1 vagrant vagrant   6 Jan  5 03:39 .vbox_version
+-rw-------. 1 vagrant vagrant 661 Feb 19 16:57 .viminfo
+# [vagrant@localhost ~]$ whoami
+vagrant
+# [vagrant@localhost ~]$ pwd
+/home/vagrant
+# [vagrant@localhost ~]$ sudo -i
+# [root@localhost ~]# whoami
+root
+# [root@localhost ~]# pwd
+/root
+# [root@localhost ~]# yum install httpd wget unzip -y
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+epel/x86_64/metalink                                                                     |  20 kB  00:00:00
+ * base: mirrors.ircam.fr
+ * epel: mirror.in2p3.fr
+ * extras: mirror.in2p3.fr
+ * updates: mirror.in2p3.fr
+base                                                                                     | 3.6 kB  00:00:00
+epel                                                                                     | 4.7 kB  00:00:00
+extras                                                                                   | 2.9 kB  00:00:00
+updates                                                                                  | 2.9 kB  00:00:00
+(1/2): epel/x86_64/updateinfo                                                            | 1.0 MB  00:00:00
+(2/2): epel/x86_64/primary_db                                                            | 7.0 MB  00:00:01
+Package httpd-2.4.6-98.el7.centos.6.x86_64 already installed and latest version
+Package wget-1.14-18.el7_6.1.x86_64 already installed and latest version
+Package unzip-6.0-24.el7_9.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]#
