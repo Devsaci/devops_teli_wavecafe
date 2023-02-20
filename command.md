@@ -903,3 +903,13 @@ Saving to: ‘2121_wave_cafe.zip’
 2023-02-20 10:18:11 (890 KB/s) - ‘2121_wave_cafe.zip’ saved [11896390/11896390]
 [root@localhost tmp]#
 
+# [root@localhost tmp]# ls
+2121_wave_cafe.zip  devopsfile5.txt
+devopsfile1.txt     systemd-private-91169a32830c47efb1939ea93e2e8d25-chronyd.service-VLZWsI
+devopsfile2.txt     systemd-private-91169a32830c47efb1939ea93e2e8d25-httpd.service-E2lJwi
+devopsfile3.txt     systemd-private-c10cf8d844f4449a9e181b60365edf26-chronyd.service-lta0BL
+devopsfile4.txt     systemd-private-c10cf8d844f4449a9e181b60365edf26-httpd.service-awDtV7
+[root@localhost tmp]#
+
+
+
