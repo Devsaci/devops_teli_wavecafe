@@ -888,3 +888,18 @@ Nothing to do
     inet6 fe80::a00:27ff:fefb:692c/64 scope link
        valid_lft forever preferred_lft forever
 [root@localhost ~]#
+
+# [root@localhost html]# cd /tmp/
+# [root@localhost tmp]# wget https://www.tooplate.com/zip-templates/2121_wave_cafe.zip
+--2023-02-20 10:17:57--  https://www.tooplate.com/zip-templates/2121_wave_cafe.zip
+Resolving www.tooplate.com (www.tooplate.com)... 69.16.201.107
+Connecting to www.tooplate.com (www.tooplate.com)|69.16.201.107|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 11896390 (11M) [application/zip]
+Saving to: ‘2121_wave_cafe.zip’
+
+100%[======================================================================>] 11,896,390   915KB/s   in 13s
+
+2023-02-20 10:18:11 (890 KB/s) - ‘2121_wave_cafe.zip’ saved [11896390/11896390]
+[root@localhost tmp]#
+
