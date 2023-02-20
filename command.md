@@ -978,3 +978,25 @@ cp: overwrite ‘/var/www/html/index.html’? y
 # [root@localhost 2121_wave_cafe]# ls /var/www/html/
 css  fontawesome  img  index.html  index_v1.html  js  video
 
+# [root@localhost 2121_wave_cafe]# systemctl status httpd
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled; vendor preset: disabled)
+   Active: active (running) since Mon 2023-02-20 10:28:43 UTC; 1min 15s ago
+     Docs: man:httpd(8)
+           man:apachectl(8)
+  Process: 3614 ExecStop=/bin/kill -WINCH ${MAINPID} (code=exited, status=0/SUCCESS)
+ Main PID: 3620 (httpd)
+   Status: "Total requests: 0; Current requests/sec: 0; Current traffic:   0 B/sec"
+   CGroup: /system.slice/httpd.service
+           ├─3620 /usr/sbin/httpd -DFOREGROUND
+           ├─3621 /usr/sbin/httpd -DFOREGROUND
+           ├─3622 /usr/sbin/httpd -DFOREGROUND
+           ├─3623 /usr/sbin/httpd -DFOREGROUND
+           ├─3624 /usr/sbin/httpd -DFOREGROUND
+           └─3625 /usr/sbin/httpd -DFOREGROUND
+
+Feb 20 10:28:43 localhost.localdomain systemd[1]: Starting The Apache HTTP Server...
+Feb 20 10:28:43 localhost.localdomain httpd[3620]: AH00558: httpd: Could not reliably determine the serve...sageFeb 20 10:28:43 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@localhost 2121_wave_cafe]#
+
