@@ -911,5 +911,58 @@ devopsfile3.txt     systemd-private-c10cf8d844f4449a9e181b60365edf26-chronyd.ser
 devopsfile4.txt     systemd-private-c10cf8d844f4449a9e181b60365edf26-httpd.service-awDtV7
 [root@localhost tmp]#
 
+# [root@localhost tmp]# unzip 2121_wave_cafe.zip
+Archive:  2121_wave_cafe.zip
+   creating: 2121_wave_cafe/
+   creating: 2121_wave_cafe/css/
+  inflating: 2121_wave_cafe/css/tooplate-wave-cafe.css
+   creating: 2121_wave_cafe/fontawesome/
+   creating: 2121_wave_cafe/fontawesome/css/
+  inflating: 2121_wave_cafe/fontawesome/css/all.min.css
+  inflating: 2121_wave_cafe/fontawesome/LICENSE.txt
+   creating: 2121_wave_cafe/fontawesome/webfonts/
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-brands-400.eot
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-brands-400.svg
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-brands-400.ttf
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-brands-400.woff
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-brands-400.woff2
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-regular-400.eot
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-regular-400.svg
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-regular-400.ttf
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-regular-400.woff
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-regular-400.woff2
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-solid-900.eot
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-solid-900.svg
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-solid-900.ttf
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-solid-900.woff
+  inflating: 2121_wave_cafe/fontawesome/webfonts/fa-solid-900.woff2
+   creating: 2121_wave_cafe/img/
+  inflating: 2121_wave_cafe/img/about-1.png
+  inflating: 2121_wave_cafe/img/about-2.png
+  inflating: 2121_wave_cafe/img/hot-americano.png
+  inflating: 2121_wave_cafe/img/hot-cappuccino.png
+  inflating: 2121_wave_cafe/img/hot-espresso.png
+  inflating: 2121_wave_cafe/img/hot-latte.png
+  inflating: 2121_wave_cafe/img/iced-americano.png
+  inflating: 2121_wave_cafe/img/iced-cappuccino.png
+  inflating: 2121_wave_cafe/img/iced-espresso.png
+  inflating: 2121_wave_cafe/img/iced-latte.png
+  inflating: 2121_wave_cafe/img/smoothie-1.png
+  inflating: 2121_wave_cafe/img/smoothie-2.png
+  inflating: 2121_wave_cafe/img/smoothie-3.png
+  inflating: 2121_wave_cafe/img/smoothie-4.png
+  inflating: 2121_wave_cafe/img/special-01.jpg
+  inflating: 2121_wave_cafe/img/special-02.jpg
+  inflating: 2121_wave_cafe/img/special-03.jpg
+  inflating: 2121_wave_cafe/img/special-04.jpg
+  inflating: 2121_wave_cafe/img/special-05.jpg
+  inflating: 2121_wave_cafe/img/special-06.jpg
+  inflating: 2121_wave_cafe/index.html
+   creating: 2121_wave_cafe/js/
+  inflating: 2121_wave_cafe/js/jquery-3.4.1.min.js
+   creating: 2121_wave_cafe/video/
+  inflating: 2121_wave_cafe/video/wave-cafe-video-bg.mp4
+[root@localhost tmp]#
+
 
 
